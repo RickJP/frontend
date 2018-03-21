@@ -21,16 +21,17 @@ trait CommercialControllers {
   def jobsAgent: JobsAgent
   def controllerComponents: ControllerComponents
   implicit def appContext: ApplicationContext
-  lazy val bookOffersController = wire[BookOffersController]
+  lazy val bookOffersController       = wire[BookOffersController]
   lazy val contentApiOffersController = wire[ContentApiOffersController]
-  lazy val creativeTestPage = wire[CreativeTestPage]
-  lazy val hostedContentController = wire[HostedContentController]
-  lazy val jobsController = wire[JobsController]
-  lazy val liveEventsController = wire[LiveEventsController]
-  lazy val multi = wire[Multi]
-  lazy val soulmatesController = wire[SoulmatesController]
-  lazy val travelOffersController = wire[TravelOffersController]
-  lazy val trafficDriverController = wire[TrafficDriverController]
-  lazy val piggybackPixelController = wire[PiggybackPixelController]
-  lazy val adsDotTextFileController = wire[AdsDotTextViewController]
+  lazy val creativeTestPage           = wire[CreativeTestPage]
+  lazy val hostedContentController    = wire[HostedContentController]
+  lazy val jobsController             = wire[JobsController]
+  lazy val liveEventsController       = wire[LiveEventsController]
+  lazy val multi                      = wire[Multi]
+  lazy val soulmatesController        = wire[SoulmatesController]
+  lazy val travelOffersController     = wire[TravelOffersController]
+  lazy val trafficDriverController    = wire[TrafficDriverController]
+  lazy val piggybackPixelController   = wire[PiggybackPixelController]
+  lazy val adsDotTextFileController   = wire[AdsDotTextViewController]
+  lazy val prebidAnalyticsController  = wire[PrebidAnalyticsController]
 }
